@@ -13641,6 +13641,10 @@ a {
   text-decoration: none;
 }
 
+.btn-hover-primary:hover {
+  color: #fff;
+}
+
 .nav-item:hover {
   font-weight: bold;
 }
@@ -13650,18 +13654,6 @@ a {
     background-color: #C0A4A5;
     font-weight: normal;
   }
-}
-
-.navbtn-list li:hover {
-  background-color: #C0A4A5;
-}
-
-.navbtn-list li a {
-  color: #907A7B;
-}
-
-.navbtn-list li a:hover {
-  color: #fff;
 }
 
 h1 a, .h1 a {
