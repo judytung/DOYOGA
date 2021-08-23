@@ -1,7 +1,16 @@
 .nav-item:hover{
+    font-weight: bold;
     @include media-breakpoint-down(md) {
         background-color: $accent;
+        font-weight: normal;
     }
-    
 }
-   
+.navbtn-list li:hover {
+    background-color: $accent;
+}
+.navbtn-list li a{
+    color: $secondary;
+}
+.navbtn-list li a:hover {
+    color: $white;
+}   
