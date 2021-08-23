@@ -8070,6 +8070,10 @@ fieldset:disabled .btn {
   border-color: #fff !important;
 }
 
+.border-s {
+  border-width: 0.5px !important;
+}
+
 .border-1 {
   border-width: 1px !important;
 }
@@ -13666,12 +13670,6 @@ h1 a, .h1 a {
   background-image: url(../images/DOYOGA-logo.png);
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
-}
-
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -13957,6 +13955,10 @@ h1 a, .h1 a {
 
 .border-white {
   border-color: #fff !important;
+}
+
+.border-s {
+  border-width: 0.5px !important;
 }
 
 .border-1 {
