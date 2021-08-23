@@ -1,0 +1,7 @@
+.nav-item:hover{
+    @include media-breakpoint-down(md) {
+        background-color: $accent;
+    }
+    
+}
+   
