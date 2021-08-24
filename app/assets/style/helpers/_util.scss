@@ -5,6 +5,29 @@ $utilities:map-merge(
             (
               responsive: true,
             )
+        ),  
+        "position": map-merge(
+            map-get($utilities,"position"),
+            (
+              responsive: true,
+              class: pos
+            )
+          ),
+        "width": map-merge(
+            map-get($utilities,"width"),
+            (
+              responsive: true,
+            )
+        ),
+        "z-index": (
+        property: z-index,
+        values: (
+            5: 5,
+            4: 4,
+            3: 3,
+            2: 2,
+            1: 1,
+        )
         ),
     )
 )
