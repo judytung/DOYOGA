@@ -13647,17 +13647,20 @@ a {
   color: #fff;
 }
 
-.hover-bg-secondary:hover {
-  background-color: #907A7B;
+.hover-bg-accent:hover, .hover-bg-accent:focus {
+  background-color: #C0A4A5;
 }
 
-.nav-item:hover {
+.hover-text-bold:hover {
   font-weight: bold;
 }
 
-@media (max-width: 767.98px) {
+.background-primary {
+  background-color: #F5F0E7;
+}
+
+@media (max-width: 991.98px) {
   .nav-item:hover {
-    background-color: #C0A4A5;
     font-weight: normal;
   }
 }
@@ -13666,10 +13669,20 @@ h1 a, .h1 a {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
+  background-size: cover;
   width: 96px;
   height: 31px;
-  background-size: cover;
   background-image: url(../images/DOYOGA-logo.png);
+}
+
+.logo {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: cover;
+  width: 96px;
+  height: 31px;
+  background-image: url(../images/DOYOGA.png);
 }
 
 .align-baseline {
@@ -13987,8 +14000,16 @@ h1 a, .h1 a {
   width: 25% !important;
 }
 
+.w-33 {
+  width: 33.33% !important;
+}
+
 .w-50 {
   width: 50% !important;
+}
+
+.w-66 {
+  width: 66.66% !important;
 }
 
 .w-75 {
@@ -15440,8 +15461,14 @@ h1 a, .h1 a {
   .w-sm-25 {
     width: 25% !important;
   }
+  .w-sm-33 {
+    width: 33.33% !important;
+  }
   .w-sm-50 {
     width: 50% !important;
+  }
+  .w-sm-66 {
+    width: 66.66% !important;
   }
   .w-sm-75 {
     width: 75% !important;
@@ -16236,6 +16263,21 @@ h1 a, .h1 a {
   .fs-sm-lg {
     font-size: calc(1.4rem + 1.8vw) !important;
   }
+  .fw-sm-light {
+    font-weight: 300 !important;
+  }
+  .fw-sm-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-sm-normal {
+    font-weight: 400 !important;
+  }
+  .fw-sm-bold {
+    font-weight: 700 !important;
+  }
+  .fw-sm-bolder {
+    font-weight: bolder !important;
+  }
   .text-sm-start {
     text-align: left !important;
   }
@@ -16310,8 +16352,14 @@ h1 a, .h1 a {
   .w-md-25 {
     width: 25% !important;
   }
+  .w-md-33 {
+    width: 33.33% !important;
+  }
   .w-md-50 {
     width: 50% !important;
+  }
+  .w-md-66 {
+    width: 66.66% !important;
   }
   .w-md-75 {
     width: 75% !important;
@@ -17106,6 +17154,21 @@ h1 a, .h1 a {
   .fs-md-lg {
     font-size: calc(1.4rem + 1.8vw) !important;
   }
+  .fw-md-light {
+    font-weight: 300 !important;
+  }
+  .fw-md-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-md-normal {
+    font-weight: 400 !important;
+  }
+  .fw-md-bold {
+    font-weight: 700 !important;
+  }
+  .fw-md-bolder {
+    font-weight: bolder !important;
+  }
   .text-md-start {
     text-align: left !important;
   }
@@ -17180,8 +17243,14 @@ h1 a, .h1 a {
   .w-lg-25 {
     width: 25% !important;
   }
+  .w-lg-33 {
+    width: 33.33% !important;
+  }
   .w-lg-50 {
     width: 50% !important;
+  }
+  .w-lg-66 {
+    width: 66.66% !important;
   }
   .w-lg-75 {
     width: 75% !important;
@@ -17976,6 +18045,21 @@ h1 a, .h1 a {
   .fs-lg-lg {
     font-size: calc(1.4rem + 1.8vw) !important;
   }
+  .fw-lg-light {
+    font-weight: 300 !important;
+  }
+  .fw-lg-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-lg-normal {
+    font-weight: 400 !important;
+  }
+  .fw-lg-bold {
+    font-weight: 700 !important;
+  }
+  .fw-lg-bolder {
+    font-weight: bolder !important;
+  }
   .text-lg-start {
     text-align: left !important;
   }
@@ -18050,8 +18134,14 @@ h1 a, .h1 a {
   .w-xl-25 {
     width: 25% !important;
   }
+  .w-xl-33 {
+    width: 33.33% !important;
+  }
   .w-xl-50 {
     width: 50% !important;
+  }
+  .w-xl-66 {
+    width: 66.66% !important;
   }
   .w-xl-75 {
     width: 75% !important;
@@ -18846,6 +18936,21 @@ h1 a, .h1 a {
   .fs-xl-lg {
     font-size: calc(1.4rem + 1.8vw) !important;
   }
+  .fw-xl-light {
+    font-weight: 300 !important;
+  }
+  .fw-xl-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-xl-normal {
+    font-weight: 400 !important;
+  }
+  .fw-xl-bold {
+    font-weight: 700 !important;
+  }
+  .fw-xl-bolder {
+    font-weight: bolder !important;
+  }
   .text-xl-start {
     text-align: left !important;
   }
@@ -18920,8 +19025,14 @@ h1 a, .h1 a {
   .w-xxl-25 {
     width: 25% !important;
   }
+  .w-xxl-33 {
+    width: 33.33% !important;
+  }
   .w-xxl-50 {
     width: 50% !important;
+  }
+  .w-xxl-66 {
+    width: 66.66% !important;
   }
   .w-xxl-75 {
     width: 75% !important;
@@ -19715,6 +19826,21 @@ h1 a, .h1 a {
   }
   .fs-xxl-lg {
     font-size: calc(1.4rem + 1.8vw) !important;
+  }
+  .fw-xxl-light {
+    font-weight: 300 !important;
+  }
+  .fw-xxl-lighter {
+    font-weight: lighter !important;
+  }
+  .fw-xxl-normal {
+    font-weight: 400 !important;
+  }
+  .fw-xxl-bold {
+    font-weight: 700 !important;
+  }
+  .fw-xxl-bolder {
+    font-weight: bolder !important;
   }
   .text-xxl-start {
     text-align: left !important;
