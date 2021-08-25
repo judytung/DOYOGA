@@ -13651,6 +13651,10 @@ a {
   background-color: #C0A4A5;
 }
 
+.hover-bg-secondary:hover {
+  background-color: #907A7B;
+}
+
 .hover-text-bold:hover {
   font-weight: bold;
 }
