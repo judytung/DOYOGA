@@ -4,6 +4,9 @@
 .hover-bg-accent:hover,.hover-bg-accent:focus {
     background-color: $accent;
 }
+.hover-bg-secondary:hover {
+    background-color: $secondary;
+}
 .hover-text-bold:hover {
     font-weight: bold;
 }
