@@ -1,8 +1,14 @@
-h1 a {
+h1 a{
     @include text-hide {
         width: 96px;
         height: 31px;
-        background-size:cover;
         background-image: url(../images/DOYOGA-logo.png);
+    }
+}
+.logo {
+    @include text-hide {
+        width: 96px;
+        height: 31px;
+        background-image: url(../images/DOYOGA.png);
     }
 }

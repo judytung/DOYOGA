@@ -13,21 +13,36 @@ $utilities:map-merge(
               class: pos
             )
           ),
-        "width": map-merge(
-            map-get($utilities,"width"),
+        "width": (
+            property: width,
+            class: w,
+            responsive: true,
+            values: (
+              25: 25%,
+              33: 33.33%,
+              50: 50%,
+              66: 66.66%,
+              75: 75%,
+              100: 100%,
+              auto: auto
+            )
+        ),
+        "font-weight": map-merge(
+            map-get($utilities,"font-weight"),
             (
               responsive: true,
             )
         ),
         "z-index": (
-        property: z-index,
-        values: (
-            5: 5,
-            4: 4,
-            3: 3,
-            2: 2,
-            1: 1,
-        )
+            property: z-index,
+            values: (
+                5: 5,
+                4: 4,
+                3: 3,
+                2: 2,
+                1: 1,
+            )
         ),
+        
     )
 )

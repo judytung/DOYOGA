@@ -1,6 +1,12 @@
 .hover-text-white:hover {
     color: $white;
 }
-.hover-bg-secondary:hover {
-    background-color: $secondary;
+.hover-bg-accent:hover,.hover-bg-accent:focus {
+    background-color: $accent;
+}
+.hover-text-bold:hover {
+    font-weight: bold;
+}
+.background-primary {
+    background-color: $primary;
 }

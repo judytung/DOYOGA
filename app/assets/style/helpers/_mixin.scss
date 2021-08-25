@@ -2,5 +2,6 @@
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
+    background-size: cover;
     @content
 }

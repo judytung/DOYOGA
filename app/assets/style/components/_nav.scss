@@ -1,8 +1,5 @@
-.nav-item:hover{
-    font-weight: bold;
-   
-    @include media-breakpoint-down(md) {
-        background-color: $accent;
+.nav-item:hover{ 
+    @include media-breakpoint-down(lg) {
         font-weight: normal;
     }
 }
