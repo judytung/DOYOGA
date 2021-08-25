@@ -2,3 +2,9 @@
   height: 560px;
   background: url(../images/photo-1612157777902-5382bc6e864b.jpeg)bottom center/cover;
 }
+.benefit-img {
+    height: 420px;
+    @include media-breakpoint-between(md, lg) {
+      height: 252px;
+    }
+}
