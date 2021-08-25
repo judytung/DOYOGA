@@ -13685,6 +13685,11 @@ h1 a, .h1 a {
   background-image: url(../images/DOYOGA.png);
 }
 
+.banner {
+  height: 560px;
+  background: url(../images/photo-1612157777902-5382bc6e864b.jpeg) bottom center/cover;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
