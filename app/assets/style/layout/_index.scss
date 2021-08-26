@@ -8,3 +8,21 @@
       height: 252px;
     }
 }
+.teacher-banner {
+  height: 628px;
+}
+.teacher-img {
+  width: 48px;
+  height: 48px;
+  @include media-breakpoint-up(md){
+    width: 96px;
+    height: 96px;
+  }
+}
+.size-s {
+  @include media-breakpoint-up(md){
+    width: 68px;
+    height: 68px;
+  }
+}
+
