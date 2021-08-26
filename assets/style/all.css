@@ -48,7 +48,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: source-han-sans-cjk-tc, sans-seri;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6910,7 +6910,7 @@ fieldset:disabled .btn {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: source-han-sans-cjk-tc, sans-seri;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7023,7 +7023,7 @@ fieldset:disabled .btn {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: source-han-sans-cjk-tc, sans-seri;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -14083,6 +14083,34 @@ h1 a, .h1 a {
   .size-s {
     width: 68px;
     height: 68px;
+  }
+}
+
+.surrounding-img-1, .surrounding-img-2 {
+  height: 210px;
+}
+
+@media (min-width: 768px) {
+  .surrounding-img-1 {
+    height: 266px;
+  }
+}
+
+@media (min-width: 992px) {
+  .surrounding-img-1 {
+    height: 444px;
+  }
+}
+
+@media (min-width: 768px) {
+  .surrounding-img-2, .surrounding-img-3 {
+    height: 117px;
+  }
+}
+
+@media (min-width: 992px) {
+  .surrounding-img-2, .surrounding-img-3 {
+    height: 207px;
   }
 }
 
