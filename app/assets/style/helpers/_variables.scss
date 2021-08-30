@@ -277,6 +277,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  25: 25%,
   50: 50%,
   100: 100%
 ) !default;
@@ -467,8 +468,9 @@ $font-sizes: (
   3: $font-size-base * 1.5,   //24
   4: $font-size-base * 1.25,  //20
   5: $font-size-base * .875,  //14
-  6: $h6-font-size ,           //16
-  lg: $font-size-base * 2.75,  //44
+  6: $h6-font-size ,          //16
+  lg: $font-size-base * 2.75, //44
+  xl: $font-size-base * 3,    //48
 ) !default;
 // scss-docs-end font-sizes
 
