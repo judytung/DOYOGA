@@ -14387,6 +14387,10 @@ a {
   }
 }
 
+.swiper-btn-next.swiper-button-disabled, .swiper-btn-prev.swiper-button-disabled {
+  opacity: 0.35;
+}
+
 h1 a, .h1 a {
   text-indent: 101%;
   white-space: nowrap;
