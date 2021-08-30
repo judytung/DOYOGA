@@ -11,7 +11,6 @@ var swiper = new Swiper('.courseSwiper', {
   breakpoints: {
     992: {
       slidesPerView: 1.5,
-      loop: true,
       grid: {
         rows: 1
       }
