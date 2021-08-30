@@ -260,7 +260,7 @@ kbd {
   font-size: 0.875em;
   color: #fff;
   background-color: #212529;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 kbd kbd {
@@ -2755,7 +2755,7 @@ progress {
   min-height: calc(1.5em + (0.5rem + 2px));
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 .form-control-sm::file-selector-button {
@@ -3313,7 +3313,7 @@ textarea.form-control-lg {
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 .input-group-lg > .form-select,
@@ -4359,7 +4359,7 @@ fieldset:disabled .btn {
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 .fade {
@@ -5862,13 +5862,13 @@ fieldset:disabled .btn {
 }
 
 .pagination-sm .page-item:first-child .page-link {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 
 .pagination-sm .page-item:last-child .page-link {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .badge {
@@ -9647,7 +9647,7 @@ fieldset:disabled .btn {
 }
 
 .rounded-1 {
-  border-radius: 0.2rem !important;
+  border-radius: 0.3rem !important;
 }
 
 .rounded-2 {
@@ -14473,6 +14473,16 @@ h1 a, .h1 a {
   }
 }
 
+.plan-img {
+  height: 243px;
+}
+
+@media (min-width: 768px) {
+  .plan-img {
+    height: 238px;
+  }
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -16195,7 +16205,7 @@ h1 a, .h1 a {
 }
 
 .rounded-1 {
-  border-radius: 0.2rem !important;
+  border-radius: 0.3rem !important;
 }
 
 .rounded-2 {
