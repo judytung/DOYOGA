@@ -16,3 +16,33 @@ var swiper = new Swiper('.courseSwiper', {
     },
   },
 });
+
+
+
+var CusSwiper = new Swiper('.cusSwiper',{
+  slidesPerView:1,
+  grid :{
+    fill:'row',
+    rows:3,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.1,
+      spaceBetween:30,
+      grid:{
+        rows:2,
+      }
+    },
+    992:{
+      slidesPerView: 3,
+      spaceBetween:30,
+      grid:{
+        rows:2,
+      }
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev"
+  },
+});
