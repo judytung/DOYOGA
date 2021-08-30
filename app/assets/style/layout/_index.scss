@@ -44,3 +44,9 @@
     height: 207px;
   }
 }
+.plan-img {
+  height: 243px;
+  @include media-breakpoint-up(md) {
+    height: 238px;
+  }
+}
