@@ -265,6 +265,8 @@ $spacers: (
   6: $spacer * 3,     //48
   7: $spacer * 3.5,   //56
   8: $spacer * 4,     //64
+  10: $spacer * 5,    //80
+  11: $spacer * 5.5,  //88
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -391,7 +393,7 @@ $border-radius-pill:          50rem !default;
 
 // scss-docs-start box-shadow-variables
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-sm:              0 3px 6px rgba(#00000029, .25) !default;//0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
@@ -469,6 +471,7 @@ $font-sizes: (
   4: $font-size-base * 1.25,  //20
   5: $font-size-base * .875,  //14
   6: $h6-font-size ,          //16
+  ml: $font-size-base * 2.5,   //40
   lg: $font-size-base * 2.75, //44
   xl: $font-size-base * 3,    //48
 ) !default;
