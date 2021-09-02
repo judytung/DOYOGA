@@ -92,4 +92,5 @@ var Planswiper = new Swiper('.planSwiper', {
     }
   }
 });
+/*datepicker*/
 //# sourceMappingURL=all.js.map
