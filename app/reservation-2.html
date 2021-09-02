@@ -1,0 +1,160 @@
+---
+title: Boostrap Reservation-2
+layout: ./app/layout.ejs
+engine: ejs
+current: Reservation-2
+---
+<main>
+    <div class="container">
+        <section>
+            <div class="text-center">
+                <h2 class="fs-2 text-secondary">立即預約</h2>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <ul class="d-flex justify-content-between mt-3 mt-md-2">
+                            <li class="rounded-3  bg-primary text-secondary py-2 w-33 me-2">
+                                選擇方案
+                            </li>
+                            <li class="rounded-3 bg-secondary text-white py-2 w-33 me-2">
+                                填寫資料
+                            </li>
+                            <li class="rounded-3 bg-primary text-secondary py-2 w-33">
+                                完成預約
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 mb-11 mt-md-3 mb-md-10 mt-lg-4 mb-lg-13">
+                <h3 class="fs-4 text-center text-accent"><span class="fs-6 text-secondary me-2">你選擇的是</span>首次體驗課程-基礎
+                </h3>
+                <div class="row mt-3">
+                    <form action="" class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                        <fieldset>
+                            <label>1. 是否接觸過瑜珈?</label>
+                            <div class="mt-2">
+                                <input type="radio" name="havelearn" id="havelearnture" class="form-check-input">
+                                <label for="havelearnture">是</label>
+                                <input type="radio" name="havelearn" id="havelearnfalse" class="form-check-input ms-4">
+                                <label for="havelearnfalse">否</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-4">
+                            <label>2. 想改善的生活問題?</label>
+                            <div class="mt-2 d-flex justify-content-between flex-wrap">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" name="muscleproblem" id="muscleproblem"
+                                                class="form-check-input">
+                                            <label for="muscleproblem" class="text-nowrap">肌耐力不足</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" name="softness" id="softness"
+                                                class="form-check-input">
+                                            <label for="softness" class="text-nowrap">柔軟度不佳</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" name="pressure" id="pressure"
+                                                class="form-check-input">
+                                            <label for="pressure" class="text-nowrap">壓力大</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" name="posture" id="posture" class="form-check-input">
+                                            <label for="posture" class="text-nowrap">姿勢不正</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" name="sleep" id="sleep" class="form-check-input">
+                                            <label for="sleep" class="text-nowrap">睡眠品質差</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-4 mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" name="attention" id="attention"
+                                                class="form-check-input">
+                                            <label for="attention" class="text-nowrap">注意力不足</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-4">
+                            <label class="d-block">3. 每週累積運動量約為多少？</label>
+                            <div class="row flex-wrap mt-2">
+                                <div class="col-6">
+                                    <input type="radio" name="exercise" id="up150min" class="form-check-input">
+                                    <label for="up150min">150 分鐘以上</label>
+                                </div>
+                                <div class="col-6">
+                                    <input type="radio" name="exercise" id="up75min" class="form-check-input">
+                                    <label for="up75min">75~150 分鐘</label>
+                                </div>
+                                <br>
+                                <div class="col-6 mt-2">
+                                    <input type="radio" name="exercise" id="up30min" class="form-check-input">
+                                    <label for="up30min">30~75 分鐘</label>
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <input type="radio" name="exercise" id="less30min" class="form-check-input">
+                                    <label for="less30min">30 分鐘以下</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-4">
+                            <label>4. 上課預約報到日</label>
+                            <p class="mt-s">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input type="text" name="date" id="date" placeholder="MM/DD/YYYY"
+                                        class="form-control border-accent border-1 rounded-2 mt-1 py-ms text-center">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-4">
+                            <label>5. 填寫基本資料，完成預約後會寄送通知至電子信箱</label>
+                            <div class="d-flex mt-2">
+                                <div>
+                                    <label for="name">姓名</label>
+                                    <input type="text" name="name" id="name" placeholder="請輸入您的姓名"
+                                        class="form-control py-ms mt-1 ps-m">
+                                </div>
+                                <div class="ms-1">
+                                    <label for="age">年齡</label>
+                                    <input type="text" name="age" id="age" placeholder="請輸入您的年齡"
+                                        class="form-control py-ms mt-1 ps-m">
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <label>性別</label>
+                                <select name="gender" id="gender" class="form-select mt-1 w-25">
+                                    <option selected>女</option>
+                                    <option>男</option>
+                                </select>
+                            </div>
+                            <div class="mt-2">
+                                <label for="email">電子信箱</label>
+                                <input type="text" name="email" id="email" placeholder="email@example.com" class="form-control py-ms mt-1 ps-m">
+                            </div>
+                            <div class="mt-2">
+                                <label for="phone">手機號碼</label>
+                                <input type="text" name="phone" id="phone" placeholder="0912-345-678" class="form-control py-ms mt-1 ps-m">
+                            </div>
+                        </fieldset>
+                        <div class="mt-4">
+                            <input type="submit" value="送出" class="btn bg-accent text-white py-1 w-100">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

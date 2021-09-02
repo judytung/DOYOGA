@@ -255,6 +255,7 @@ $spacers: (
   0: 0,
   xs: $spacer * .125, //2
   s: $spacer * .25,   //4
+  ms: $spacer * .375, //6
   m: $spacer * .625,  //10
   ml: $spacer * 1.75, //28
   1: $spacer * .5,    //8
@@ -267,6 +268,7 @@ $spacers: (
   8: $spacer * 4,     //64
   10: $spacer * 5,    //80
   11: $spacer * 5.5,  //88
+  13: $spacer * 6.5,  //104
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -290,7 +292,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $gray-600!default;//$gray-900 !default;
 $body-text-align:           null !default;
 
 
@@ -399,7 +401,7 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
 $component-active-color:      $white !default;
-$component-active-bg:         $primary !default;
+$component-active-bg:         $white !default;//$primary !default;
 
 // scss-docs-start caret-variables
 $caret-width:                 .3em !default;
@@ -712,8 +714,8 @@ $input-bg:                              $white !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
+$input-color:                           $accent!default;//$body-color !default;
+$input-border-color:                    $accent!default;//$gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -722,12 +724,12 @@ $input-border-radius-sm:                $border-radius-sm !default;
 $input-border-radius-lg:                $border-radius-lg !default;
 
 $input-focus-bg:                        $input-bg !default;
-$input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
+$input-focus-border-color:              $accent!default;//tint-color($component-active-bg, 50%) !default;
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               $accent!default;//$gray-600 !default;
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
@@ -762,8 +764,8 @@ $form-check-input-focus-border:           $input-focus-border-color !default;
 $form-check-input-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 
 $form-check-input-checked-color:          $component-active-color !default;
-$form-check-input-checked-bg-color:       $component-active-bg !default;
-$form-check-input-checked-border-color:   $form-check-input-checked-bg-color !default;
+$form-check-input-checked-bg-color:       $accent!default;//$component-active-bg !default;
+$form-check-input-checked-border-color:   $accent!default;//$form-check-input-checked-bg-color !default;
 $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") !default;
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
@@ -827,7 +829,7 @@ $form-select-feedback-icon-position:    center right $form-select-indicator-padd
 $form-select-feedback-icon-size:        $input-height-inner-half $input-height-inner-half !default;
 
 $form-select-border-width:        $input-border-width !default;
-$form-select-border-color:        $input-border-color !default;
+$form-select-border-color:        $accent!default;//$input-border-color !default;
 $form-select-border-radius:       $border-radius !default;
 $form-select-box-shadow:          $box-shadow-inset !default;
 

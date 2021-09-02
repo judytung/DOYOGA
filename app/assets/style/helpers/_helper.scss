@@ -1,7 +1,12 @@
 .hover-text-white:hover {
     color: $white;
 }
-.hover-bg-accent:hover,.hover-bg-accent:focus {
+.hover-bg-md-accent:hover,.hover-bg-md-accent:focus {
+    @include media-breakpoint-down(md){
+        background-color: $accent;
+    } 
+}
+.hover-bg-accent:hover {
     background-color: $accent;
 }
 .hover-bg-secondary:hover {
