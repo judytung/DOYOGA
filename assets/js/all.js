@@ -93,4 +93,11 @@ var Planswiper = new Swiper('.planSwiper', {
   }
 });
 /*datepicker*/
+
+var elem = document.querySelector('input[name="datepicker"]');
+var datepicker = new Datepicker(elem, {
+  nextArrow: ' >',
+  prevArrow: ' <',
+  buttonClass: 'btn text-primary'
+});
 //# sourceMappingURL=all.js.map

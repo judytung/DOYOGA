@@ -78,43 +78,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
-}
-
-@media (min-width: 1200px) {
-  h1, .h1 {
-    font-size: 2.5rem;
-  }
+  font-size: 2.5rem;
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-
-@media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 1.75rem;
-  }
+  font-size: 1.75rem;
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
+  font-size: 1.5rem;
 }
 
 h5, .h5 {
@@ -385,14 +361,8 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: 1.5rem;
   line-height: inherit;
-}
-
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
 }
 
 legend + * {
@@ -470,75 +440,39 @@ progress {
 }
 
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
+  font-size: 5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-1 {
-    font-size: 5rem;
-  }
 }
 
 .display-2 {
-  font-size: calc(1.575rem + 3.9vw);
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-2 {
-    font-size: 4.5rem;
-  }
 }
 
 .display-3 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-3 {
-    font-size: 4rem;
-  }
 }
 
 .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-4 {
-    font-size: 3.5rem;
-  }
 }
 
 .display-5 {
-  font-size: calc(1.425rem + 2.1vw);
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-5 {
-    font-size: 3rem;
-  }
 }
 
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-  .display-6 {
-    font-size: 2.5rem;
-  }
 }
 
 .list-unstyled {
@@ -9839,15 +9773,15 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-  font-size: calc(1.35rem + 1.2vw) !important;
+  font-size: 2.25rem !important;
 }
 
 .fs-2 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: 1.75rem !important;
 }
 
 .fs-3 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 1.5rem !important;
 }
 
 .fs-4 {
@@ -9863,15 +9797,15 @@ fieldset:disabled .btn {
 }
 
 .fs-ml {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: 2.5rem !important;
 }
 
 .fs-lg {
-  font-size: calc(1.4rem + 1.8vw) !important;
+  font-size: 2.75rem !important;
 }
 
 .fs-xl {
-  font-size: calc(1.425rem + 2.1vw) !important;
+  font-size: 3rem !important;
 }
 
 .fst-italic {
@@ -15734,27 +15668,6 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 2.25rem !important;
-  }
-  .fs-2 {
-    font-size: 1.75rem !important;
-  }
-  .fs-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-ml {
-    font-size: 2.5rem !important;
-  }
-  .fs-lg {
-    font-size: 2.75rem !important;
-  }
-  .fs-xl {
-    font-size: 3rem !important;
-  }
-}
-
 @media print {
   .d-print-inline {
     display: inline !important;
@@ -15869,30 +15782,6 @@ fieldset {
   }
 }
 
-.swiper-btn-next.swiper-button-disabled, .swiper-btn-prev.swiper-button-disabled {
-  opacity: 0.35;
-}
-
-h1 a, .h1 a {
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-size: cover;
-  width: 96px;
-  height: 31px;
-  background-image: url(../images/DOYOGA-logo.png);
-}
-
-.logo {
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-size: cover;
-  width: 96px;
-  height: 31px;
-  background-image: url(../images/DOYOGA.png);
-}
-
 .banner {
   height: 560px;
   background: url(../images/photo-1612157777902-5382bc6e864b.jpeg) bottom center/cover;
@@ -15931,7 +15820,8 @@ h1 a, .h1 a {
   }
 }
 
-.surrounding-img-1, .surrounding-img-2 {
+.surrounding-img-1,
+.surrounding-img-2 {
   height: 210px;
 }
 
@@ -15948,13 +15838,15 @@ h1 a, .h1 a {
 }
 
 @media (min-width: 768px) {
-  .surrounding-img-2, .surrounding-img-3 {
+  .surrounding-img-2,
+  .surrounding-img-3 {
     height: 117px;
   }
 }
 
 @media (min-width: 992px) {
-  .surrounding-img-2, .surrounding-img-3 {
+  .surrounding-img-2,
+  .surrounding-img-3 {
     height: 207px;
   }
 }
@@ -15967,6 +15859,30 @@ h1 a, .h1 a {
   .plan-img {
     height: 238px;
   }
+}
+
+.swiper-btn-next.swiper-button-disabled, .swiper-btn-prev.swiper-button-disabled {
+  opacity: 0.35;
+}
+
+h1 a, .h1 a {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: cover;
+  width: 96px;
+  height: 31px;
+  background-image: url(../images/DOYOGA-logo.png);
+}
+
+.logo {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: cover;
+  width: 96px;
+  height: 31px;
+  background-image: url(../images/DOYOGA.png);
 }
 
 .align-baseline {
@@ -17671,15 +17587,15 @@ h1 a, .h1 a {
 }
 
 .fs-1 {
-  font-size: calc(1.35rem + 1.2vw) !important;
+  font-size: 2.25rem !important;
 }
 
 .fs-2 {
-  font-size: calc(1.3rem + 0.6vw) !important;
+  font-size: 1.75rem !important;
 }
 
 .fs-3 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 1.5rem !important;
 }
 
 .fs-4 {
@@ -17695,15 +17611,15 @@ h1 a, .h1 a {
 }
 
 .fs-ml {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: 2.5rem !important;
 }
 
 .fs-lg {
-  font-size: calc(1.4rem + 1.8vw) !important;
+  font-size: 2.75rem !important;
 }
 
 .fs-xl {
-  font-size: calc(1.425rem + 2.1vw) !important;
+  font-size: 3rem !important;
 }
 
 .fst-italic {
@@ -19141,13 +19057,13 @@ h1 a, .h1 a {
     padding-left: 6.5rem !important;
   }
   .fs-sm-1 {
-    font-size: calc(1.35rem + 1.2vw) !important;
+    font-size: 2.25rem !important;
   }
   .fs-sm-2 {
-    font-size: calc(1.3rem + 0.6vw) !important;
+    font-size: 1.75rem !important;
   }
   .fs-sm-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-sm-4 {
     font-size: 1.25rem !important;
@@ -19159,13 +19075,13 @@ h1 a, .h1 a {
     font-size: 1rem !important;
   }
   .fs-sm-ml {
-    font-size: calc(1.375rem + 1.5vw) !important;
+    font-size: 2.5rem !important;
   }
   .fs-sm-lg {
-    font-size: calc(1.4rem + 1.8vw) !important;
+    font-size: 2.75rem !important;
   }
   .fs-sm-xl {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fw-sm-light {
     font-weight: 300 !important;
@@ -20284,13 +20200,13 @@ h1 a, .h1 a {
     padding-left: 6.5rem !important;
   }
   .fs-md-1 {
-    font-size: calc(1.35rem + 1.2vw) !important;
+    font-size: 2.25rem !important;
   }
   .fs-md-2 {
-    font-size: calc(1.3rem + 0.6vw) !important;
+    font-size: 1.75rem !important;
   }
   .fs-md-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-md-4 {
     font-size: 1.25rem !important;
@@ -20302,13 +20218,13 @@ h1 a, .h1 a {
     font-size: 1rem !important;
   }
   .fs-md-ml {
-    font-size: calc(1.375rem + 1.5vw) !important;
+    font-size: 2.5rem !important;
   }
   .fs-md-lg {
-    font-size: calc(1.4rem + 1.8vw) !important;
+    font-size: 2.75rem !important;
   }
   .fs-md-xl {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fw-md-light {
     font-weight: 300 !important;
@@ -21427,13 +21343,13 @@ h1 a, .h1 a {
     padding-left: 6.5rem !important;
   }
   .fs-lg-1 {
-    font-size: calc(1.35rem + 1.2vw) !important;
+    font-size: 2.25rem !important;
   }
   .fs-lg-2 {
-    font-size: calc(1.3rem + 0.6vw) !important;
+    font-size: 1.75rem !important;
   }
   .fs-lg-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-lg-4 {
     font-size: 1.25rem !important;
@@ -21445,13 +21361,13 @@ h1 a, .h1 a {
     font-size: 1rem !important;
   }
   .fs-lg-ml {
-    font-size: calc(1.375rem + 1.5vw) !important;
+    font-size: 2.5rem !important;
   }
   .fs-lg-lg {
-    font-size: calc(1.4rem + 1.8vw) !important;
+    font-size: 2.75rem !important;
   }
   .fs-lg-xl {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fw-lg-light {
     font-weight: 300 !important;
@@ -22570,13 +22486,13 @@ h1 a, .h1 a {
     padding-left: 6.5rem !important;
   }
   .fs-xl-1 {
-    font-size: calc(1.35rem + 1.2vw) !important;
+    font-size: 2.25rem !important;
   }
   .fs-xl-2 {
-    font-size: calc(1.3rem + 0.6vw) !important;
+    font-size: 1.75rem !important;
   }
   .fs-xl-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-xl-4 {
     font-size: 1.25rem !important;
@@ -22588,13 +22504,13 @@ h1 a, .h1 a {
     font-size: 1rem !important;
   }
   .fs-xl-ml {
-    font-size: calc(1.375rem + 1.5vw) !important;
+    font-size: 2.5rem !important;
   }
   .fs-xl-lg {
-    font-size: calc(1.4rem + 1.8vw) !important;
+    font-size: 2.75rem !important;
   }
   .fs-xl-xl {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fw-xl-light {
     font-weight: 300 !important;
@@ -23713,13 +23629,13 @@ h1 a, .h1 a {
     padding-left: 6.5rem !important;
   }
   .fs-xxl-1 {
-    font-size: calc(1.35rem + 1.2vw) !important;
+    font-size: 2.25rem !important;
   }
   .fs-xxl-2 {
-    font-size: calc(1.3rem + 0.6vw) !important;
+    font-size: 1.75rem !important;
   }
   .fs-xxl-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
+    font-size: 1.5rem !important;
   }
   .fs-xxl-4 {
     font-size: 1.25rem !important;
@@ -23731,13 +23647,13 @@ h1 a, .h1 a {
     font-size: 1rem !important;
   }
   .fs-xxl-ml {
-    font-size: calc(1.375rem + 1.5vw) !important;
+    font-size: 2.5rem !important;
   }
   .fs-xxl-lg {
-    font-size: calc(1.4rem + 1.8vw) !important;
+    font-size: 2.75rem !important;
   }
   .fs-xxl-xl {
-    font-size: calc(1.425rem + 2.1vw) !important;
+    font-size: 3rem !important;
   }
   .fw-xxl-light {
     font-weight: 300 !important;
@@ -23762,81 +23678,6 @@ h1 a, .h1 a {
   }
   .text-xxl-center {
     text-align: center !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .fs-1 {
-    font-size: 2.25rem !important;
-  }
-  .fs-2 {
-    font-size: 1.75rem !important;
-  }
-  .fs-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-ml {
-    font-size: 2.5rem !important;
-  }
-  .fs-lg {
-    font-size: 2.75rem !important;
-  }
-  .fs-xl {
-    font-size: 3rem !important;
-  }
-  .fs-sm-1 {
-    font-size: 2.25rem !important;
-  }
-  .fs-sm-2 {
-    font-size: 1.75rem !important;
-  }
-  .fs-sm-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-sm-ml {
-    font-size: 2.5rem !important;
-  }
-  .fs-sm-lg {
-    font-size: 2.75rem !important;
-  }
-  .fs-sm-xl {
-    font-size: 3rem !important;
-  }
-  .fs-md-1 {
-    font-size: 2.25rem !important;
-  }
-  .fs-md-2 {
-    font-size: 1.75rem !important;
-  }
-  .fs-md-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-md-ml {
-    font-size: 2.5rem !important;
-  }
-  .fs-md-lg {
-    font-size: 2.75rem !important;
-  }
-  .fs-md-xl {
-    font-size: 3rem !important;
-  }
-  .fs-lg-1 {
-    font-size: 2.25rem !important;
-  }
-  .fs-lg-2 {
-    font-size: 1.75rem !important;
-  }
-  .fs-lg-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-lg-ml {
-    font-size: 2.5rem !important;
-  }
-  .fs-lg-lg {
-    font-size: 2.75rem !important;
-  }
-  .fs-lg-xl {
-    font-size: 3rem !important;
   }
 }
 
