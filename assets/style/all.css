@@ -15865,6 +15865,18 @@ fieldset {
   opacity: 0.35;
 }
 
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #907A7B;
+}
+
+.day, .dow, .month, .year {
+  color: #907A7B;
+}
+
+.datepicker-picker {
+  border: 1px solid #C0A4A5 !important;
+}
+
 h1 a, .h1 a {
   text-indent: 101%;
   white-space: nowrap;
