@@ -55,24 +55,30 @@ var firstBtn = document.querySelector('.firstPlanBtn');
 var shortPlan = document.querySelector('.short-plan');
 var longPlan = document.querySelector('.long-plan');
 var firstPlan = document.querySelector('.firstPlan-card');
-
-firstBtn.addEventListener('click',function(){
-  shortPlan.classList.add('d-none');
-  longPlan.classList.add('d-none');
-  firstPlan.classList.add('border-4');
-});
+if (firstBtn) {
+  firstBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    shortPlan.classList.add("d-none");
+    longPlan.classList.add("d-none");
+    firstPlan.classList.add('border-4');
+  });
+}
 
 var planLevelCard = document.querySelector('.planLevel-card');
 var checkCircle = document.querySelector('.check-circle');
 var choosePlan = document.querySelector('.choose-plan');
 var keepReser = document.querySelector('.keepReser');
-planLevelCard.addEventListener('click',function(){
-  planLevelCard.classList.add('border-white');
-  planLevelCard.classList.add('border-4');
-  checkCircle.classList.add('opacity-100');
-  choosePlan.classList.add('d-block');
-  keepReser.classList.add('d-block');
-});
+if (planLevelCard) {
+  planLevelCard.addEventListener("click", (e) => {
+    e.preventDefault();
+    planLevelCard.classList.add('border-white');
+    planLevelCard.classList.add('border-4');
+    checkCircle.classList.add('opacity-100');
+    choosePlan.classList.add('d-block');
+    keepReser.classList.add('d-block');
+  });
+}
+
 /*reservation swiper*/
 var Planswiper = new Swiper('.planSwiper', {
   slidesPerView: 1,
@@ -98,7 +104,7 @@ var Planswiper = new Swiper('.planSwiper', {
 /*datepicker*/
 const elem = document.querySelector('input[name="datepicker"]');
 const datepicker = new Datepicker(elem, {
-  nextArrow: ' >',
-	prevArrow: ' <',
-	buttonClass: 'btn text-primary',
+  buttonClass: 'btn text-accent',
+  nextArrow: '>',
+  prevArrow: '<'
 }); 

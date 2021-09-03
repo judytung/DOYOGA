@@ -1,0 +1,9 @@
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+    background-color: $secondary;
+}
+.day,.dow,.month,.year {
+    color: $secondary;
+}
+.datepicker-picker {
+	border: 1px solid $accent !important;
+}
