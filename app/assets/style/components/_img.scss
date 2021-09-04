@@ -60,8 +60,29 @@
 
 .plan-img {
     height: 243px;
-
     @include media-breakpoint-up(md) {
         height: 238px;
     }
+}
+
+.img-course-aerial {
+    height: 218px;
+    @include media-breakpoint-up(md) {
+        height: 341px;
+    }
+}
+.img-course {
+    height: 196px;
+}
+.img-course-basic-modal {
+    height: 165px;
+    @include media-breakpoint-up(md) {
+        height: 418px;
+    }
+}
+.course-teacher-card {
+    height: 418px;
+}
+.img-course-teacher {
+    height: 95px;
 }

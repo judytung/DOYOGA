@@ -101,6 +101,31 @@ var Planswiper = new Swiper('.planSwiper', {
   },
 });
 
+/*course teacher-swiper*/
+var CourseTeacherswiper = new Swiper('.course-teacher-swiper', {
+  slidesPerView: 1,
+  grid: {
+    rows: 3,
+  },
+  spaceBetween: 30,
+
+  breakpoints: {
+   768: {
+      slidesPerView:2.1,
+      grid: {
+        rows: 1,
+      },
+    },
+    992:{
+      slidesPerView:3.1,
+      grid: {
+        rows: 1,
+      },
+    }
+  },
+});
+
+
 /*datepicker*/
 const elem = document.querySelector('input[name="datepicker"]');
 const datepicker = new Datepicker(elem, {
