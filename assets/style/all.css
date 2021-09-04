@@ -16469,7 +16469,7 @@ fieldset {
 }
 
 @media (max-width: 767.98px) {
-  .hover-bg-md-accent:hover, .hover-bg-md-accent:focus {
+  .hover-nav-accent:hover, .hover-nav-accent:focus {
     background-color: #C0A4A5;
   }
 }
