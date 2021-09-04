@@ -64,7 +64,7 @@
         height: 238px;
     }
 }
-
+/*course*/
 .img-course-aerial {
     height: 218px;
     @include media-breakpoint-up(md) {
@@ -85,4 +85,18 @@
 }
 .img-course-teacher {
     height: 95px;
+}
+
+/*surrounding*/
+.img-surrounding {
+    height: 350px;
+    @include media-breakpoint-between(md, lg) {
+        height:210px;
+    }
+}
+.img-course-recommend {
+    height: 196px;
+    @include media-breakpoint-between(md, lg) {
+        height:161px;
+    }
 }

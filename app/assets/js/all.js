@@ -125,6 +125,33 @@ var CourseTeacherswiper = new Swiper('.course-teacher-swiper', {
   },
 });
 
+/*surrounding course-recommend-swiper*/
+var TeacherRecommendswiper = new Swiper('.course-recommend-swiper', {
+  slidesPerView: 1.3,
+  spaceBetween: 30,
+  grid :{
+    fill:'row',
+    rows:1,
+  },
+  breakpoints: {
+   768: {
+      slidesPerView:3,
+      grid: {
+        rows: 1,
+      },
+    },
+    992:{
+      slidesPerView:4.2,
+      grid: {
+        rows: 1,
+      },
+    }
+  },
+  autoplay: {
+    delay:2500,
+  },
+  loop:true,
+});
 
 /*datepicker*/
 const elem = document.querySelector('input[name="datepicker"]');
