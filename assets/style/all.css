@@ -2589,7 +2589,7 @@ progress {
 }
 
 .table {
-  --bs-table-bg: transparent;
+  --bs-table-bg: #fff;
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: #707070;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
@@ -2601,7 +2601,7 @@ progress {
   margin-bottom: 1rem;
   color: #707070;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #C0A4A5;
 }
 
 .table > :not(caption) > * > * {
@@ -10024,6 +10024,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-m {
+  font-size: 2rem !important;
+}
+
 .fs-ml {
   font-size: 2.5rem !important;
 }
@@ -16464,12 +16468,16 @@ fieldset {
   border: 0;
 }
 
+th {
+  font-weight: 400;
+}
+
 .hover-text-white:hover {
   color: #fff;
 }
 
 @media (max-width: 767.98px) {
-  .hover-nav-accent:hover, .hover-nav-accent:focus {
+  .hover-nav-accent:hover {
     background-color: #C0A4A5;
   }
 }
@@ -18518,6 +18526,10 @@ h1 a, .h1 a {
   font-size: 1rem !important;
 }
 
+.fs-m {
+  font-size: 2rem !important;
+}
+
 .fs-ml {
   font-size: 2.5rem !important;
 }
@@ -20077,6 +20089,9 @@ h1 a, .h1 a {
   .fs-sm-6 {
     font-size: 1rem !important;
   }
+  .fs-sm-m {
+    font-size: 2rem !important;
+  }
   .fs-sm-ml {
     font-size: 2.5rem !important;
   }
@@ -21314,6 +21329,9 @@ h1 a, .h1 a {
   }
   .fs-md-6 {
     font-size: 1rem !important;
+  }
+  .fs-md-m {
+    font-size: 2rem !important;
   }
   .fs-md-ml {
     font-size: 2.5rem !important;
@@ -22553,6 +22571,9 @@ h1 a, .h1 a {
   .fs-lg-6 {
     font-size: 1rem !important;
   }
+  .fs-lg-m {
+    font-size: 2rem !important;
+  }
   .fs-lg-ml {
     font-size: 2.5rem !important;
   }
@@ -23791,6 +23812,9 @@ h1 a, .h1 a {
   .fs-xl-6 {
     font-size: 1rem !important;
   }
+  .fs-xl-m {
+    font-size: 2rem !important;
+  }
   .fs-xl-ml {
     font-size: 2.5rem !important;
   }
@@ -25028,6 +25052,9 @@ h1 a, .h1 a {
   }
   .fs-xxl-6 {
     font-size: 1rem !important;
+  }
+  .fs-xxl-m {
+    font-size: 2rem !important;
   }
   .fs-xxl-ml {
     font-size: 2.5rem !important;
