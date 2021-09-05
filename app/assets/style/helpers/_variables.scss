@@ -475,7 +475,8 @@ $font-sizes: (
   4: $font-size-base * 1.25,  //20
   5: $font-size-base * .875,  //14
   6: $h6-font-size ,          //16
-  ml: $font-size-base * 2.5,   //40
+  m: $font-size-base * 2,     //32
+  ml: $font-size-base * 2.5,  //40
   lg: $font-size-base * 2.75, //44
   xl: $font-size-base * 3,    //48
 ) !default;
@@ -555,7 +556,7 @@ $table-cell-padding-x-sm:     .25rem !default;
 $table-cell-vertical-align:   top !default;
 
 $table-color:                 $body-color !default;
-$table-bg:                    transparent !default;
+$table-bg:                    $white!default;//transparent !default;
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;
@@ -574,7 +575,7 @@ $table-hover-bg:              rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor:         .1 !default;
 $table-border-width:          $border-width !default;
-$table-border-color:          $border-color !default;
+$table-border-color:          $accent!default;//$border-color !default;
 
 $table-striped-order:         odd !default;
 
