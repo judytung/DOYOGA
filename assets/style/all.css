@@ -16641,6 +16641,16 @@ th {
   }
 }
 
+.map {
+  height: 195px;
+}
+
+@media (min-width: 768px) {
+  .map {
+    height: 323px;
+  }
+}
+
 .swiper-btn-next.swiper-button-disabled, .swiper-btn-prev.swiper-button-disabled {
   opacity: 0.35;
 }
