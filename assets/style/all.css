@@ -16476,7 +16476,7 @@ th {
   color: #fff;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .hover-nav-accent:hover {
     background-color: #C0A4A5;
   }
