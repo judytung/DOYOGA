@@ -100,3 +100,9 @@
         height:161px;
     }
 }
+.map {
+    height: 195px;
+    @include media-breakpoint-up(md) {
+        height: 323px;
+    }
+}

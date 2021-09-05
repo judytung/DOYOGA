@@ -1,0 +1,51 @@
+---
+title: Boostrap contact
+layout: ./app/layout.ejs
+engine: ejs
+current: contact
+---
+<main>
+    <section class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13">
+        <div class="container">
+            <h2 class="fs-2 text-secondary text-center">聯絡我們</h2>
+            <div class="row mt-3 mt-md-4">
+                <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0">
+                    <div>
+                        <iframe class="map rounded-3 w-100" frameborder="0" scrolling="no" loading="lazy"
+                        marginheight="0" marginwidth="0" allowfullscreen
+                        src="https://maps.google.com/maps?q=%E7%91%9C%E7%8F%88%E8%85%A6%E6%9C%A8&t=&z=17&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                        <div class="text-secondary mt-3 mb-5">
+                            <h3 class="fs-3">DOYOGA 教室位置</h3>
+                            <h4 class="fs-6 mt-1">高雄市苓雅區北信街 23 號 2 樓</h4>
+                            <p class="mt-1">如何前往：</p>
+                            <ul class="w-md-66 w-lg-50">
+                                <li>1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
+                                <li class="mt-3">2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
+                                <li class="mt-3">3. 開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 offset-md-1 col-lg-5 offset-lg-0">
+                    <div class="bg-primary text-secondary rounded-3 p-4">
+                        <h3 class="fs-4">意見回饋&問題詢問</h3>
+                        <form class="mt-2 mt-md-3">
+                            <label for="contactName">姓名</label>
+                            <input type="text" name="contactName" id="contactName" class="form-control mt-1" placeholder="請輸入您的姓名">
+                            <label for="contactEmail" class="mt-2">電子信箱</label>
+                            <input type="text" name="contactEmail" id="contactEmail" class="form-control mt-1" placeholder="email@example.com">
+                            <label for="contactPhone" class="mt-2">手機號碼</label>
+                            <input type="text" name="contactPhone" id="contactPhone" class="form-control mt-1" placeholder="0912-345-678">
+                            <label for="feedback" class="mt-2">意見回饋</label>
+                            <textarea name="feedback" id="feedback" class="d-block w-100 mt-1 form-control" rows="8"></textarea>
+                            <div class="d-flex justify-content-end">
+                                <input type="submit" value="送出" class="btn bg-accent text-white mt-2">
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
