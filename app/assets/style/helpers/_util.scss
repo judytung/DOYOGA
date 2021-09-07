@@ -33,6 +33,10 @@ $utilities:map-merge(
             map-get($utilities,"font-weight"),
             (
               responsive: true,
+              values: (
+                medium: 500,
+                
+              )
             )
         ),
         "z-index": (
