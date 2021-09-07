@@ -16502,12 +16502,6 @@ th {
   display: none;
 }
 
-@media (max-width: 991.98px) {
-  .nav-item:hover {
-    font-weight: normal;
-  }
-}
-
 .banner {
   height: 560px;
   background: url(../images/photo-1612157777902-5382bc6e864b.jpeg) bottom center/cover;
@@ -16540,7 +16534,7 @@ th {
 }
 
 @media (min-width: 768px) {
-  .size-s {
+  .teacher-img-s {
     width: 68px;
     height: 68px;
   }
@@ -18560,24 +18554,8 @@ h1 a, .h1 a {
   font-style: normal !important;
 }
 
-.fw-light {
-  font-weight: 300 !important;
-}
-
-.fw-lighter {
-  font-weight: lighter !important;
-}
-
-.fw-normal {
-  font-weight: 400 !important;
-}
-
-.fw-bold {
-  font-weight: 700 !important;
-}
-
-.fw-bolder {
-  font-weight: bolder !important;
+.fw-medium {
+  font-weight: 500 !important;
 }
 
 .lh-1 {
@@ -20111,20 +20089,8 @@ h1 a, .h1 a {
   .fs-sm-xl {
     font-size: 3rem !important;
   }
-  .fw-sm-light {
-    font-weight: 300 !important;
-  }
-  .fw-sm-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-sm-normal {
-    font-weight: 400 !important;
-  }
-  .fw-sm-bold {
-    font-weight: 700 !important;
-  }
-  .fw-sm-bolder {
-    font-weight: bolder !important;
+  .fw-sm-medium {
+    font-weight: 500 !important;
   }
   .text-sm-start {
     text-align: left !important;
@@ -21352,20 +21318,8 @@ h1 a, .h1 a {
   .fs-md-xl {
     font-size: 3rem !important;
   }
-  .fw-md-light {
-    font-weight: 300 !important;
-  }
-  .fw-md-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-md-normal {
-    font-weight: 400 !important;
-  }
-  .fw-md-bold {
-    font-weight: 700 !important;
-  }
-  .fw-md-bolder {
-    font-weight: bolder !important;
+  .fw-md-medium {
+    font-weight: 500 !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -22593,20 +22547,8 @@ h1 a, .h1 a {
   .fs-lg-xl {
     font-size: 3rem !important;
   }
-  .fw-lg-light {
-    font-weight: 300 !important;
-  }
-  .fw-lg-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-lg-normal {
-    font-weight: 400 !important;
-  }
-  .fw-lg-bold {
-    font-weight: 700 !important;
-  }
-  .fw-lg-bolder {
-    font-weight: bolder !important;
+  .fw-lg-medium {
+    font-weight: 500 !important;
   }
   .text-lg-start {
     text-align: left !important;
@@ -23834,20 +23776,8 @@ h1 a, .h1 a {
   .fs-xl-xl {
     font-size: 3rem !important;
   }
-  .fw-xl-light {
-    font-weight: 300 !important;
-  }
-  .fw-xl-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-xl-normal {
-    font-weight: 400 !important;
-  }
-  .fw-xl-bold {
-    font-weight: 700 !important;
-  }
-  .fw-xl-bolder {
-    font-weight: bolder !important;
+  .fw-xl-medium {
+    font-weight: 500 !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -25075,20 +25005,8 @@ h1 a, .h1 a {
   .fs-xxl-xl {
     font-size: 3rem !important;
   }
-  .fw-xxl-light {
-    font-weight: 300 !important;
-  }
-  .fw-xxl-lighter {
-    font-weight: lighter !important;
-  }
-  .fw-xxl-normal {
-    font-weight: 400 !important;
-  }
-  .fw-xxl-bold {
-    font-weight: 700 !important;
-  }
-  .fw-xxl-bolder {
-    font-weight: bolder !important;
+  .fw-xxl-medium {
+    font-weight: 500 !important;
   }
   .text-xxl-start {
     text-align: left !important;
