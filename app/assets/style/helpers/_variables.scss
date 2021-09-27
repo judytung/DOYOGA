@@ -1487,3 +1487,34 @@ $kbd-color:                         $white !default;
 $kbd-bg:                            $gray-900 !default;
 
 $pre-color:                         null !default;
+
+//imgheight
+$base : 16;
+$imgSizes :(
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+  3: (48/$base) * $spacer,
+  4\.25: (68/$base) * $spacer,
+  6: (96/$base) * $spacer,
+  7\.25: (116/$base) * $spacer,
+  10: (160/$base) * $spacer,
+  10\.25: (164/$base) * $spacer,
+  12\.25: (196/$base) * $spacer,
+  13: (208/$base) * $spacer,
+  13\.125: (210/$base) * $spacer,
+  13\.625: (218/$base) *$spacer,
+  14\.875: (238/$base) * $spacer,
+  15\.25: (244/$base) * $spacer,
+  16\.625: (266/$base) * $spacer,
+  15\.75: (252/$base) * $spacer,
+  20\.25: (324/$base) * $spacer,
+  21\.25: (340/$base) * $spacer,
+  21\.875: (350/$base) * $spacer,
+  26\.125: (418/$base) * $spacer,
+  26\.25: (420/$base) * $spacer,
+  27\.75: (444/$base) * $spacer,
+  39\.25: (628/$base) * $spacer,
+)

@@ -29,6 +29,20 @@ $utilities:map-merge(
               auto: auto
             )
         ),
+        "height": (
+          property: height,
+          class: h,
+          responsive: true,
+          values: (
+            $imgSizes
+          )
+        ),
+        "max-height": (
+        property: max-height,
+        class: mh,
+        responsive: true,
+        values: ($imgSizes)
+        ),
         "font-weight": map-merge(
             map-get($utilities,"font-weight"),
             (
