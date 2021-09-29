@@ -7,13 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Boostrap Reservation-done</title>
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
-        kitId: 'eoe2kti',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          kitId: 'eoe2kti',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
@@ -42,33 +62,33 @@
       </button>
       <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
       <!-- 選單項目&漢堡式折疊選單 -->
-      <div class="collapse navbar-collapse flex-grow-0 pos-absolute top-100 start-0 w-100 pos-lg-relative top-lg-0 start-lg-0 w-lg-auto z-index-5" id="navbarCollapse">
+      <div
+        class="collapse navbar-collapse flex-grow-0 pos-absolute top-100 start-0 w-100 pos-lg-relative top-lg-0 start-lg-0 w-lg-auto z-index-5"
+        id="navbarCollapse">
         <ul class="navbar-nav">
-          <li
-            class="nav-item  hover-nav-accent background-primary">
+          <li class="nav-item  hover-nav-accent background-primary">
             <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./course.html">課程介紹</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent  background-primary">
-            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./surrounding.html">瑜伽空間</a>
+          <li class="nav-item hover-nav-accent  background-primary">
+            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob"
+              href="./surrounding.html">瑜伽空間</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary">
-            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./curriculum.html">當月課表</a>
+          <li class="nav-item hover-nav-accent background-primary">
+            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob"
+              href="./curriculum.html">當月課表</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary  d-lg-none">
+          <li class="nav-item hover-nav-accent background-primary  d-lg-none">
             <a class="nav-link fs-4 fs-md-6 text-center text-gray py-2 hvr-bob" href="./reservation.html">立即預約</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary  d-lg-none">
+          <li class="nav-item hover-nav-accent background-primary  d-lg-none">
             <a class="nav-link fs-4 fs-md-6 text-center text-gray py-2 hvr-bob" href="./contact.html">聯絡我們</a>
           </li>
         </ul>
       </div>
       <div class="d-lg-flex align-items-center d-none">
         <ul class="navbtn-list d-flex">
-          <li class="me-2"><a href="./reservation.html" class="btn btn-outline-secondary rounded-3 hover-text-white">立即預約</a></li>
+          <li class="me-2"><a href="./reservation.html"
+              class="btn btn-outline-secondary rounded-3 hover-text-white">立即預約</a></li>
           <li><a href="./contact.html" class="btn btn-outline-secondary rounded-3 hover-text-white">聯絡我們</a></li>
         </ul>
       </div>
@@ -77,16 +97,16 @@
   <!--右邊固定icon-->
   <div class="d-none d-lg-flex flex-column pos-fixed end-0 top-25 me-2 z-index-4">
     <ul>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-facebook fs-xl text-secondary hvr-pop"></i>
         </a></li>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-instagram fs-xl text-secondary hvr-pop"></i>
         </a></li>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-messenger fs-xl text-secondary hvr-pop"></i>
         </a></li>
-      </ul>
+    </ul>
   </div>
   <main>
     <div class="container">
@@ -152,9 +172,10 @@
       <!--subscribe-->
       <div class="py-3 d-lg-flex justify-content-lg-between
        w-md-50 w-lg-100">
-        <p class="fs-3 fs-md-2 text-white">現在訂閱，獲得課程優惠碼！</p>
-        <div class="input-group mt-1 mt-lg-0 w-lg-33">
-          <input type="text" class="form-control py-1 px-2 fs-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <p class="fs-3 fs-md-2 text-white" data-aos="fade-right" data-aos-duration="1200">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group mt-1 mt-lg-0 w-lg-33" data-aos="fade-left" data-aos-duration="1200">
+          <input type="text" class="form-control py-1 px-2 fs-4" placeholder="輸入您的電子信箱"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
           <button class="btn btn-accent text-white py-1 px-2" type="button" id="button-addon2">訂閱</button>
         </div>
       </div>
@@ -177,14 +198,14 @@
       </div>
       <ul class="d-flex">
         <li class="me-1"><a href="#">
-          <i class="bi bi-facebook fs-3"></i>
-        </a></li>
+            <i class="bi bi-facebook fs-3"></i>
+          </a></li>
         <li class="me-1"><a href="#">
-          <i class="bi bi-instagram fs-3"></i>
-        </a></li>
+            <i class="bi bi-instagram fs-3"></i>
+          </a></li>
         <li><a href="#">
-          <i class="bi bi-messenger fs-3"></i>
-        </a></li>
+            <i class="bi bi-messenger fs-3"></i>
+          </a></li>
       </ul>
     </div>
   </footer>
@@ -192,6 +213,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      offset: 100,
+    });
+  </script>
+  <!---->
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

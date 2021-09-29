@@ -7,13 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Boostrap contact</title>
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
-        kitId: 'eoe2kti',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          kitId: 'eoe2kti',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
@@ -42,33 +62,33 @@
       </button>
       <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
       <!-- 選單項目&漢堡式折疊選單 -->
-      <div class="collapse navbar-collapse flex-grow-0 pos-absolute top-100 start-0 w-100 pos-lg-relative top-lg-0 start-lg-0 w-lg-auto z-index-5" id="navbarCollapse">
+      <div
+        class="collapse navbar-collapse flex-grow-0 pos-absolute top-100 start-0 w-100 pos-lg-relative top-lg-0 start-lg-0 w-lg-auto z-index-5"
+        id="navbarCollapse">
         <ul class="navbar-nav">
-          <li
-            class="nav-item  hover-nav-accent background-primary">
+          <li class="nav-item  hover-nav-accent background-primary">
             <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./course.html">課程介紹</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent  background-primary">
-            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./surrounding.html">瑜伽空間</a>
+          <li class="nav-item hover-nav-accent  background-primary">
+            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob"
+              href="./surrounding.html">瑜伽空間</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary">
-            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./curriculum.html">當月課表</a>
+          <li class="nav-item hover-nav-accent background-primary">
+            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob"
+              href="./curriculum.html">當月課表</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary  d-lg-none">
+          <li class="nav-item hover-nav-accent background-primary  d-lg-none">
             <a class="nav-link fs-4 fs-md-6 text-center text-gray py-2 hvr-bob" href="./reservation.html">立即預約</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary  d-lg-none">
+          <li class="nav-item hover-nav-accent background-primary  d-lg-none">
             <a class="nav-link fs-4 fs-md-6 text-center text-gray py-2 hvr-bob" href="./contact.html">聯絡我們</a>
           </li>
         </ul>
       </div>
       <div class="d-lg-flex align-items-center d-none">
         <ul class="navbtn-list d-flex">
-          <li class="me-2"><a href="./reservation.html" class="btn btn-outline-secondary rounded-3 hover-text-white">立即預約</a></li>
+          <li class="me-2"><a href="./reservation.html"
+              class="btn btn-outline-secondary rounded-3 hover-text-white">立即預約</a></li>
           <li><a href="./contact.html" class="btn btn-outline-secondary rounded-3 hover-text-white">聯絡我們</a></li>
         </ul>
       </div>
@@ -77,16 +97,16 @@
   <!--右邊固定icon-->
   <div class="d-none d-lg-flex flex-column pos-fixed end-0 top-25 me-2 z-index-4">
     <ul>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-facebook fs-xl text-secondary hvr-pop"></i>
         </a></li>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-instagram fs-xl text-secondary hvr-pop"></i>
         </a></li>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-messenger fs-xl text-secondary hvr-pop"></i>
         </a></li>
-      </ul>
+    </ul>
   </div>
   <main>
     <section class="pt-6 pt-md-8 pb-11 pb-md-10 pb-lg-13">
@@ -95,11 +115,7 @@
             <div class="row mt-3 mt-md-4">
                 <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0">
                     <div>
-                        <!--地圖參考他人，待研究中-->
-                        <iframe class="h-12.25 h-md-20.25 rounded-3 w-100" frameborder="0" scrolling="no" loading="lazy"
-                        marginheight="0" marginwidth="0" allowfullscreen
-                        src="https://maps.google.com/maps?q=%E7%91%9C%E7%8F%88%E8%85%A6%E6%9C%A8&t=&z=17&ie=UTF8&iwloc=&output=embed">
-                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.525290649549!2d120.3323390149471!3d22.634195485151164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e051966c66cf5%3A0x2c0009d78fb4c01e!2z55Gc54-I6IWm5pyoTWFtYXlvZ2EgU3R1ZGlv!5e0!3m2!1szh-TW!2stw!4v1632744142858!5m2!1szh-TW!2stw" class="h-12.25 h-md-20.25 rounded-3 w-100" frameborder="0" scrolling="no" allowfullscreen="" loading="lazy"></iframe>
                         <div class="text-secondary mt-3 mb-5">
                             <h3 class="fs-3 fw-normal">DOYOGA 教室位置</h3>
                             <h4 class="fs-6 mt-1 fw-normal">高雄市苓雅區北信街 23 號 2 樓</h4>
@@ -139,9 +155,10 @@
       <!--subscribe-->
       <div class="py-3 d-lg-flex justify-content-lg-between
        w-md-50 w-lg-100">
-        <p class="fs-3 fs-md-2 text-white">現在訂閱，獲得課程優惠碼！</p>
-        <div class="input-group mt-1 mt-lg-0 w-lg-33">
-          <input type="text" class="form-control py-1 px-2 fs-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <p class="fs-3 fs-md-2 text-white" data-aos="fade-right" data-aos-duration="1200">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group mt-1 mt-lg-0 w-lg-33" data-aos="fade-left" data-aos-duration="1200">
+          <input type="text" class="form-control py-1 px-2 fs-4" placeholder="輸入您的電子信箱"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
           <button class="btn btn-accent text-white py-1 px-2" type="button" id="button-addon2">訂閱</button>
         </div>
       </div>
@@ -164,14 +181,14 @@
       </div>
       <ul class="d-flex">
         <li class="me-1"><a href="#">
-          <i class="bi bi-facebook fs-3"></i>
-        </a></li>
+            <i class="bi bi-facebook fs-3"></i>
+          </a></li>
         <li class="me-1"><a href="#">
-          <i class="bi bi-instagram fs-3"></i>
-        </a></li>
+            <i class="bi bi-instagram fs-3"></i>
+          </a></li>
         <li><a href="#">
-          <i class="bi bi-messenger fs-3"></i>
-        </a></li>
+            <i class="bi bi-messenger fs-3"></i>
+          </a></li>
       </ul>
     </div>
   </footer>
@@ -179,6 +196,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      offset: 100,
+    });
+  </script>
+  <!---->
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

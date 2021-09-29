@@ -7,13 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Boostrap course</title>
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
-        kitId: 'eoe2kti',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          kitId: 'eoe2kti',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
@@ -42,33 +62,33 @@
       </button>
       <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
       <!-- 選單項目&漢堡式折疊選單 -->
-      <div class="collapse navbar-collapse flex-grow-0 pos-absolute top-100 start-0 w-100 pos-lg-relative top-lg-0 start-lg-0 w-lg-auto z-index-5" id="navbarCollapse">
+      <div
+        class="collapse navbar-collapse flex-grow-0 pos-absolute top-100 start-0 w-100 pos-lg-relative top-lg-0 start-lg-0 w-lg-auto z-index-5"
+        id="navbarCollapse">
         <ul class="navbar-nav">
-          <li
-            class="nav-item  hover-nav-accent background-primary">
+          <li class="nav-item  hover-nav-accent background-primary">
             <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./course.html">課程介紹</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent  background-primary">
-            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./surrounding.html">瑜伽空間</a>
+          <li class="nav-item hover-nav-accent  background-primary">
+            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob"
+              href="./surrounding.html">瑜伽空間</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary">
-            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob" href="./curriculum.html">當月課表</a>
+          <li class="nav-item hover-nav-accent background-primary">
+            <a class="nav-link fs-4 fs-md-6 fw-light text-center text-gray py-2 hvr-bob"
+              href="./curriculum.html">當月課表</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary  d-lg-none">
+          <li class="nav-item hover-nav-accent background-primary  d-lg-none">
             <a class="nav-link fs-4 fs-md-6 text-center text-gray py-2 hvr-bob" href="./reservation.html">立即預約</a>
           </li>
-          <li
-            class="nav-item hover-nav-accent background-primary  d-lg-none">
+          <li class="nav-item hover-nav-accent background-primary  d-lg-none">
             <a class="nav-link fs-4 fs-md-6 text-center text-gray py-2 hvr-bob" href="./contact.html">聯絡我們</a>
           </li>
         </ul>
       </div>
       <div class="d-lg-flex align-items-center d-none">
         <ul class="navbtn-list d-flex">
-          <li class="me-2"><a href="./reservation.html" class="btn btn-outline-secondary rounded-3 hover-text-white">立即預約</a></li>
+          <li class="me-2"><a href="./reservation.html"
+              class="btn btn-outline-secondary rounded-3 hover-text-white">立即預約</a></li>
           <li><a href="./contact.html" class="btn btn-outline-secondary rounded-3 hover-text-white">聯絡我們</a></li>
         </ul>
       </div>
@@ -77,16 +97,16 @@
   <!--右邊固定icon-->
   <div class="d-none d-lg-flex flex-column pos-fixed end-0 top-25 me-2 z-index-4">
     <ul>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-facebook fs-xl text-secondary hvr-pop"></i>
         </a></li>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-instagram fs-xl text-secondary hvr-pop"></i>
         </a></li>
-        <li><a href="#">
+      <li><a href="#">
           <i class="bi bi-messenger fs-xl text-secondary hvr-pop"></i>
         </a></li>
-      </ul>
+    </ul>
   </div>
   <main>
     <section class="pt-6 pt-md-8 border-bottom border-secondary">
@@ -134,140 +154,140 @@
             <div class="row pt-4 pb-6 pb-lg-8">
                 <div class="col-lg-9">
                     <ul class="row">
-                        <li class="col-md-6 col-lg-7">
-                            <div class="card rounded-3 pos-relative border-0">
-                                <div>
-                                    <img src="./assets/images/woman doing yoga beside wall.jpeg" alt="yoga-img"
-                                        class="ratio ratio-3x2 h-12.25 rounded-3">
-                                </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                        <li class="col-md-6 col-lg-7 pos-relative" data-aos="fade-right" data-aos-duration="1100">
+                            <div class="card rounded-3  border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
+
+                                <img src="./assets/images/woman doing yoga beside wall.jpeg" alt="yoga-img"
+                                    class="ratio ratio-3x2 h-12.25 rounded-3">
+
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">基礎 Basic</h3>
                                     <p>授課老師：Carol Tang</p>
                                 </div>
-                                <div class="pos-absolute top-0 left-0 translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#basicModal" class="stretched-link" data-bs-toggle="modal"></a>
+                                <a href="#basicModal" class="stretched-link z-index-3" data-bs-toggle="modal"></a>
+                            </div>
+                            <div class="pos-absolute top-0 left-0 translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
-                        <li class="col-md-6 col-lg-5 mt-4 mt-md-0">
-                            <div class="card rounded-3 pos-relative border-0">
+                        <li class="col-md-6 col-lg-5 mt-4 mt-md-0 pos-relative" data-aos="fade-left" data-aos-duration="1100">
+                            <div class="card rounded-3 border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
                                 <div>
                                     <img src="./assets/images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpeg" alt="yoga-img"
                                         class="ratio ratio-3x2 h-12.25 rounded-3">
                                 </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">艾揚格 Iyengar</h3>
                                     <p>授課老師：Kanae</p>
                                 </div>
-                                <div class="pos-absolute top-0 start-0  translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#" class="stretched-link"></a>
+                                <a href="#" class="stretched-link z-index-3"></a>
+                            </div>
+                            <div class="pos-absolute top-0 start-0  translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
-                        <li class="col-md-6 col-lg-5 mt-4 mt-md-5.5">
-                            <div class="card rounded-3 pos-relative border-0">
+                        <li class="col-md-6 col-lg-5 mt-4 mt-md-5.5 pos-relative" data-aos="fade-right" data-aos-duration="1100">
+                            <div class="card rounded-3 border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
                                 <div>
                                     <img src="./assets/images/woman in black sports bra and black leggings doing yoga.jpeg"
                                         alt="yoga-img" class="ratio ratio-3x2 h-12.25 rounded-3">
                                 </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">哈達 Hatha</h3>
                                     <p>授課老師：Kuzuha</p>
                                 </div>
-                                <div class="pos-absolute top-0 start-0  translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#" class="stretched-link"></a>
+                                <a href="#" class="stretched-link z-index-3"></a>
+                            </div>
+                            <div class="pos-absolute top-0 start-0  translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
-                        <li class="col-md-6 col-lg-7 mt-4 mt-md-5.5">
-                            <div class="card rounded-3 pos-relative border-0">
+                        <li class="col-md-6 col-lg-7 mt-4 mt-md-5.5 pos-relative" data-aos="fade-left" data-aos-duration="1100">
+                            <div class="card rounded-3 border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
                                 <div>
                                     <img src="./assets/images/woman in white tank top and white leggings bending her body.jpeg"
                                         alt="yoga-img" class="ratio ratio-3x2 h-12.25 rounded-3">
                                 </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">寰宇 Universal</h3>
                                     <p>授課老師：Kuzuha</p>
                                 </div>
-                                <div class="pos-absolute top-0 start-0  translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#" class="stretched-link"></a>
+                                <a href="#" class="stretched-link z-index-3"></a>
+                            </div>
+                            <div class="pos-absolute top-0 start-0  translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
-                        <li class="col-md-6 col-lg-7 mt-4 mt-md-5.5">
-                            <div class="card rounded-3 pos-relative border-0">
+                        <li class="col-md-6 col-lg-7 mt-4 mt-md-5.5 pos-relativ" data-aos="fade-right" data-aos-duration="1100">
+                            <div class="card rounded-3 border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
                                 <div>
                                     <img src="./assets/images/two woman dong fitness exercise.jpeg" alt="yoga-img"
                                         class="ratio ratio-3x2 h-12.25 rounded-3">
                                 </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">雙人飛行 Arco Yoga</h3>
                                     <p>授課老師：Kuzuha、Kanae</p>
                                 </div>
-                                <div class="pos-absolute top-0 start-0  translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#" class="stretched-link"></a>
+                                <a href="#" class="stretched-link z-index-3"></a>
+                            </div>
+                            <div class="pos-absolute top-0 start-0  translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
-                        <li class="col-md-6 col-lg-5 mt-4 mt-md-5.5">
-                            <div class="card rounded-3 pos-relative border-0">
+                        <li class="col-md-6 col-lg-5 mt-4 mt-md-5.5 pos-relative" data-aos="fade-left" data-aos-duration="1100">
+                            <div class="card rounded-3 border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
                                 <div>
                                     <img src="./assets/images/woman doing yoga.jpeg" alt="yoga-img"
                                         class="ratio ratio-3x2 h-12.25 rounded-3">
                                 </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">阿斯坦加 Ashtanga</h3>
                                     <p>授課老師：Kanae</p>
                                 </div>
-                                <div class="pos-absolute top-0 start-0  translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#" class="stretched-link"></a>
+                                <a href="#" class="stretched-link z-index-3"></a>
+                            </div>
+                            <div class="pos-absolute top-0 start-0  translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
-                        <li class="col-md-6 col-lg-5 mt-4 mt-md-5.5">
-                            <div class="card rounded-3 pos-relative border-0">
+                        <li class="col-md-6 col-lg-5 mt-4 mt-md-5.5 pos-relative" data-aos="fade-right" data-aos-duration="1100">
+                            <div class="card rounded-3 border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
                                 <div>
                                     <img src="./assets/images/woman in white tank top and white pants bending her body by the window.jpeg"
                                         alt="yoga-img" class="ratio ratio-3x2 h-12.25 rounded-3">
                                 </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">陰陽 Yin Yang</h3>
                                     <p>授課老師：Asa Chen</p>
                                 </div>
-                                <div class="pos-absolute top-0 start-0  translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#" class="stretched-link"></a>
+                                <a href="#" class="stretched-link z-index-3"></a>
+                            </div>
+                            <div class="pos-absolute top-0 start-0  translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
-                        <li class="col-md-6 col-lg-7 mt-4 mt-md-5.5">
-                            <div class="card rounded-3 pos-relative border-0">
+                        <li class="col-md-6 col-lg-7 mt-4 mt-md-5.5 pos-relative" data-aos="fade-left" data-aos-duration="1100">
+                            <div class="card rounded-3 border-0 card-img-text-hover card__img__hover__scale overflow-hidden">
                                 <div>
                                     <img src="./assets/images/carl-barcelo-nqUHQkuVj3c-unsplash.jpeg" alt="yoga-img"
                                         class="ratio ratio-3x2 h-12.25 rounded-3">
                                 </div>
-                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end">
+                                <div class="card-img-overlay text-white d-flex flex-column justify-content-end z-index-2">
                                     <h3 class="fs-2">香氛 Aroma Yoga</h3>
                                     <p>授課老師：Asa Chen</p>
                                 </div>
-                                <div class="pos-absolute top-0 start-0 translate-middle-y">
-                                    <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
-                                        min</span>
-                                </div>
-                                <a href="#" class="stretched-link"></a>
+                                <a href="#" class="stretched-link z-index-3"></a>
+                            </div>
+                            <div class="pos-absolute top-0 start-0 translate-middle-y z-index-2">
+                                <span class="d-block fs-5 text-white bg-accent ms-3 py-s px-2 rounded-3">60
+                                    min</span>
                             </div>
                         </li>
                     </ul>
@@ -296,8 +316,9 @@
                 <div class="col">
                     <div class="swiper course-teacher-swiper pt-9">
                         <ul class="swiper-wrapper">
-                            <li class="swiper-slide pos-relative h-26.125 bg-accent text-white  pt-7  px-3 rounded-3">
-                                <div class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
+                            <li class="swiper-slide pos-relative h-26.125 bg-accent text-white  pt-7  px-3 rounded-3" data-aos="flip-left" data-aos-duration="1000">
+                                <div
+                                    class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
                                     <img src="./assets/images/teacher-1.png" alt="teacher-Carol Tang" class="h-6">
                                 </div>
                                 <div class="card-bpdy">
@@ -312,14 +333,18 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="swiper-slide pos-relative card h-26.125 bg-secondary text-white pt-7  px-3 rounded-3 mt-9 mt-md-0">
-                                <div class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
+                            <li
+                                class="swiper-slide pos-relative card h-26.125 bg-secondary text-white pt-7  px-3 rounded-3 mt-9 mt-md-0" data-aos="flip-left" data-aos-duration="1500">
+                                <div
+                                    class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
                                     <img src="./assets/images/teacher-2.png" alt="teacher-Kanae" class="h-6">
                                 </div>
                                 <div class="card-bpdy">
                                     <h5 class="fs-4 text-center fw-normal">Kanae 老師</h5>
                                     <p class="text-center mt-s">教學經歷 3 年</p>
-                                    <p class="mt-2">"希望每個人透過觀察，感受在進入動作，連接陰與陽，內和外，呼和吸的方式來更了解瑜珈練習的觀點，每個​動作都帶著呼吸和順位，在平衡心理和生理的狀況下以安全和簡化的技巧進入瑜珈姿勢，享受瑜珈和生命的喜悅，並樂在其​中。"</p>
+                                    <p class="mt-2">
+                                        "希望每個人透過觀察，感受在進入動作，連接陰與陽，內和外，呼和吸的方式來更了解瑜珈練習的觀點，每個​動作都帶著呼吸和順位，在平衡心理和生理的狀況下以安全和簡化的技巧進入瑜珈姿勢，享受瑜珈和生命的喜悅，並樂在其​中。"
+                                    </p>
                                     <ul class="mt-2">
                                         <li>・美國瑜珈聯盟 RYT200 小時認證</li>
                                         <li class="mt-s">・自然呼吸瑜珈會館開授倒立研習</li>
@@ -327,8 +352,10 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="swiper-slide pos-relative card h-26.125 bg-accent text-white   pt-7  px-3 rounded-3 mt-9 mt-md-0">
-                                <div class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
+                            <li
+                                class="swiper-slide pos-relative card h-26.125 bg-accent text-white   pt-7  px-3 rounded-3 mt-9 mt-md-0" data-aos="flip-left" data-aos-duration="2000">
+                                <div
+                                    class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
                                     <img src="./assets/images/teacher-4.png" alt="teacher-Carol Tang" class="h-6">
                                 </div>
                                 <div class="card-bpdy">
@@ -342,8 +369,10 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="swiper-slide pos-relative card h-26.125 bg-secondary text-white  pt-7  px-3 rounded-3 mt-9 mt-md-0">
-                                <div class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
+                            <li
+                                class="swiper-slide pos-relative card h-26.125 bg-secondary text-white  pt-7  px-3 rounded-3 mt-9 mt-md-0" data-aos="flip-left">
+                                <div
+                                    class="pos-absolute top-0 start-50 translate-middle border border-secondary border-4 rounded-circle">
                                     <img src="./assets/images/teacher-3.png" alt="teacher-Kanae" class="h-6">
                                 </div>
                                 <div class="card-bpdy">
@@ -398,9 +427,10 @@
       <!--subscribe-->
       <div class="py-3 d-lg-flex justify-content-lg-between
        w-md-50 w-lg-100">
-        <p class="fs-3 fs-md-2 text-white">現在訂閱，獲得課程優惠碼！</p>
-        <div class="input-group mt-1 mt-lg-0 w-lg-33">
-          <input type="text" class="form-control py-1 px-2 fs-4" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <p class="fs-3 fs-md-2 text-white" data-aos="fade-right" data-aos-duration="1200">現在訂閱，獲得課程優惠碼！</p>
+        <div class="input-group mt-1 mt-lg-0 w-lg-33" data-aos="fade-left" data-aos-duration="1200">
+          <input type="text" class="form-control py-1 px-2 fs-4" placeholder="輸入您的電子信箱"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
           <button class="btn btn-accent text-white py-1 px-2" type="button" id="button-addon2">訂閱</button>
         </div>
       </div>
@@ -423,14 +453,14 @@
       </div>
       <ul class="d-flex">
         <li class="me-1"><a href="#">
-          <i class="bi bi-facebook fs-3"></i>
-        </a></li>
+            <i class="bi bi-facebook fs-3"></i>
+          </a></li>
         <li class="me-1"><a href="#">
-          <i class="bi bi-instagram fs-3"></i>
-        </a></li>
+            <i class="bi bi-instagram fs-3"></i>
+          </a></li>
         <li><a href="#">
-          <i class="bi bi-messenger fs-3"></i>
-        </a></li>
+            <i class="bi bi-messenger fs-3"></i>
+          </a></li>
       </ul>
     </div>
   </footer>
@@ -438,6 +468,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      offset: 100,
+    });
+  </script>
+  <!---->
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
